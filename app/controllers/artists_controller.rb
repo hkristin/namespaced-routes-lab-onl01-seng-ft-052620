@@ -8,7 +8,7 @@ class ArtistsController < ApplicationController
   end
 
   def new
-    @preference = Preference.first
+  @preference = Preference.first
    if @preference.allow_create_artists
       @artist = Artist.new
    else
